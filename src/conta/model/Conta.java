@@ -57,7 +57,35 @@ public class Conta {
 		this.saldo = saldo;
 	}
 
+	public boolean sacar(float valor) {
+
+		if (this.getSaldo() < valor) {
+			System.out.println("\n Saldo Insuficiente!");
+			return false;
+		}
+
+		this.setSaldo(this.getSaldo() - valor);
+		return true;
+	}
+
+	public void depositar(float valor) {
+
+		this.setSaldo(this.getSaldo() + valor);
+
+	}
+
 	public void visualizar() {
+
+		String tipo = "";
+
+		switch (this.tipo) {
+		case 1:
+			tipo = "Conta Corrente";
+			break;
+		case 2:
+			tipo = "Conta Poupança";
+			break;
+		}
 
 		System.out.println("\n************************************************************");
 		System.out.println("Numero: " + this.numero);
