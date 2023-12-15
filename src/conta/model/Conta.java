@@ -87,15 +87,13 @@ public class Conta {
 			break;
 		}
 
-		System.out.println("\n************************************************************");
-		System.out.println("Numero: " + this.numero);
-		System.out.println("****************************************************************");
-		System.out.println("Agencia: " + this.agencia);
-		System.out.println("****************************************************************");
-		System.out.println("Tipo: " + this.tipo);
-		System.out.println("****************************************************************");
+		System.out.println("\n\n***********************************************************");
+		System.out.println("Dados da Conta:");
+		System.out.println("***********************************************************");
+		System.out.println("Numero da Conta: " + this.numero);
+		System.out.println("Agência: " + this.agencia);
+		System.out.println("Tipo da Conta: " + tipo);
 		System.out.println("Titular: " + this.titular);
-		System.out.println("****************************************************************");
 		System.out.println("Saldo: " + this.saldo);
 
 	}
